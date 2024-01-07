@@ -74,9 +74,9 @@ python main.py
 
 ## Dependencies
 
-- yfinance: Fetch historical stock data and fundamental data.
-- pandas: Data manipulation and analysis.
-- matplotlib: Plotting graphs.
+- `yfinance`: Fetch historical stock data and fundamental data.
+- `pandas`: Data manipulation and analysis.
+- `matplotlib`: Plotting graphs.
 
 ## Contributing
 
@@ -84,6 +84,6 @@ Feel free to contribute by submitting issues or pull requests. Your feedback and
 
 ## Upcoming features
 
-- Retrieve stock's fundamental data from analysis (implemented).
+- Retrieve stock's fundamental data for analysis (implemented).
 - Create stock price prediction.
 - Provide the portfolio's feedback.
