@@ -6,8 +6,9 @@ The Investment Portfolio Management App is a simple Python application that allo
 
 ## Features
 
-- **Risk and Return Calculator:** Calculate the risk and return of your investment portfolio based on historical stock data obtained from Yahoo Finance using `yfinance`.
 - **Stock Management:** Add and delete stocks to/from your portfolio. The app stores stock information such as ticker, quantity, and average price in a CSV file (`stocks.csv`).
+- **Stock fundamental analysis:** Access fundamental data for analysis from Yahoo Finance using `yfinance`.
+- **Risk and Return Calculator:** Calculate the risk and return of your investment portfolio based on historical stock data obtained from Yahoo Finance using `yfinance`.
 
 ## Getting Started
 
@@ -26,6 +27,8 @@ python main.py
 ## Usage
 
 ### 1. Manage stock list:
+
+- Choose option 'A'.
 
 #### 1.1. Add a Stock:
 
@@ -81,6 +84,6 @@ Feel free to contribute by submitting issues or pull requests. Your feedback and
 
 ## Upcoming features
 
-- Retrieve stock's fundamental data from analysis (done).
+- Retrieve stock's fundamental data from analysis (implemented).
 - Create stock price prediction.
 - Provide the portfolio's feedback.
