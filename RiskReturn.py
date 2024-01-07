@@ -1,19 +1,13 @@
+import Utils
+
 import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
-import csv
+
 
 def risk_return():
-    # Prompt for the user to enter stocks
-    stocks = []
 
-    try:
-        with open('stocks.csv', 'r') as file:
-            reader = csv.DictReader(file)
-            stocks = [{'ticker': row['ticker'], 'quantity': int(row['quantity'])} for row in reader]
-    except FileNotFoundError:
-        print("Error: stocks.csv not found.")
-        return
+    stocks = Utils.load_data()
 
     # Fetch historical stocks data using yfinance 
     for stock in stocks:

@@ -1,4 +1,7 @@
 ticker,quantity,avgPrice
-AAPL,7,150.0
+AAPL,7,152.84
 NVDA,1,209.2
 META,1,233.1
+IBM,2,121.38
+PAM,5,36.62
+JPM,3,156.54

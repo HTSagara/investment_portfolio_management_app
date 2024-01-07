@@ -14,7 +14,7 @@ The Investment Portfolio Management App is a simple Python application that allo
 ### Install Dependencies
 
 ```bash
-pip install yfinance pandas matplotlib
+pip install yfinance pandas matplotlib yahoo_fin
 ```
 
 ### Run the app

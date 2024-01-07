@@ -1,3 +1,4 @@
+import Utils
 import csv
 
 class Stock:
@@ -29,6 +30,7 @@ class StockListManager:
             return stocks
         except FileNotFoundError:
             return []
+
         
     def save_stocks(self):
         with open(self.file_path, 'w', newline='') as file:
@@ -60,10 +62,15 @@ def stock_list_mgr():
          if choice.lower() == 'q':
              break
          elif choice == '1':
-             ticker = input("Enter stock ticker: ")
-             quantity = int(input("Enter quantity: "))
-             avg_price = float(input("Enter average price: "))
-             stock_manager.add_stock(ticker, quantity, avg_price)
+             while True:
+                print("\nType exit when you are done!")
+                ticker = input("Enter stock ticker: ").upper()
+                if ticker != 'EXIT':
+                    quantity = int(input("Enter quantity: "))
+                    avg_price = float(input("Enter average price: "))
+                    stock_manager.add_stock(ticker, quantity, avg_price)
+                else:
+                    break
          elif choice == '2':
              ticker = input("Enter stock ticker to delete: ")
              stock_manager.delete_stock(ticker)
