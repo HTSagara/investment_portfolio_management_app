@@ -14,7 +14,7 @@ The Investment Portfolio Management App is a simple Python application that allo
 ### Install Dependencies
 
 ```bash
-pip install yfinance pandas matplotlib yahoo_fin
+pip install yfinance pandas matplotlib
 ```
 
 ### Run the app
@@ -41,11 +41,26 @@ python main.py
 
 - Choose option '3' in the main menu to view the current list of stocks.
 
-### 2. Calculate Risk and Return:
+### 2. Retrieve stock's fundamental data
 
-- Choose option 'A' in the main menu to calculate the risk and return of your portfolio.
+- Choose option 'B' to retrieve fundamental data and enter the stock ticker.
+- At first, the application displays only the following ratios:
+  - Profit margins
+  - Trailing P/E
+  - Forward P/E
+  - PEG Ratio
+  - Price to sales
+  - Price to book
+  - Debt to equity
+  - Ebitda margin
+  - Dividend Yield
+  - Payout ratio
 
-### 3. Quit the App:
+### 3. Calculate Risk and Return:
+
+- Choose option 'C' in the main menu to calculate the risk and return of your portfolio.
+
+### 4. Quit the App:
 
 - Choose option 'Q' in the main menu to exit the app.
 
@@ -56,7 +71,7 @@ python main.py
 
 ## Dependencies
 
-- yfinance: Fetch historical stock data.
+- yfinance: Fetch historical stock data and fundamental data.
 - pandas: Data manipulation and analysis.
 - matplotlib: Plotting graphs.
 
@@ -66,6 +81,6 @@ Feel free to contribute by submitting issues or pull requests. Your feedback and
 
 ## Upcoming features
 
-- Retrieve stock's fundamental data from analysis.
+- Retrieve stock's fundamental data from analysis (done).
 - Create stock price prediction.
 - Provide the portfolio's feedback.
